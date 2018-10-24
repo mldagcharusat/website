@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <link href='//fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <title>Add Publication</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="addNewPublication.jsp" method="post">
+            <h1 style="font-family: 'Montserrat';text-align: center;">&#8203;Add New Publication</h1>
+            <table style="font-family: 'Lora';" class="table table-striped">
+                <tr>
+                    <td><h3>Enter Paper Title</h3></td>
+                    <td><textarea name="paperTitle" id="paperTitle" required rows="5" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Author</h3></td>
+                    <td><input type="text" name="author" id="author" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Co-Author</h3></td>
+                    <td><input type="text" name="coAuthor" id="coAuthor" required></td>
+                </tr>
+                 <tr>
+                    <td><h3>Published In</h3></td>
+                    <td><input type="text" name="year" id="year" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Name of the Journal/Proceeding</h3></td>
+                    <td><input type="text" name="journal" id="journal" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Volume</h3></td>
+                    <td><input type="text" name="volume" id="volume" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Issue</h3></td>
+                    <td><input type="text" name="issue" id="issue" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Page Number</h3></td>
+                    <td><input type="text" name="pageNumber" id="pageNumber" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Name of the Publisher</h3></td>
+                    <td><input type="text" name="publisher" id="publisher" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter File(Google Drive Link)</h3></td>
+                    <td><input type="text" name="file" id="file" required></td>
+                </tr>
+                <br> 
+            </table>
+            <input type="submit" name="button" value="Add Publication" class="btn btn-success">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <link href='//fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <title>Add Event</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="addNewEvent.jsp" method="post">
+            <h1 style="font-family: 'Montserrat';text-align: center;">&#8203;Add New Event</h1>
+            <table style="font-family: 'Lora';" class="table table-striped">
+                <tr>
+                    <td><h3>Enter Name of the Event</h3></td>
+                    <td><textarea name="name" id="name" required rows="5" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Event Level</h3></td>
+                    <td><input type="text" name="level" id="level" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Event Type</h3></td>
+                    <td><select name="type" id="type" required>
+                            <option value="ABC">ABC</option>
+                            <option value="ABC">ABC</option>
+                            <option value="ABC">ABC</option>
+                            <option value="ABC">ABC</option>
+                            <option value="ABC">ABC</option>
+                            <option value="ABC">ABC</option>
+                            <option value="ABC">ABC</option>
+                            <option value="ABC">ABC</option>
+                            <option value="ABC">ABC</option>
+                            <option value="ABC">ABC</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Target Audience</h3></td>
+                    <td><input type="text" name="audience" id="audience" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Start Date</h3></td>
+                    <td><input type="date" name="startDate" id="startDate" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter End Date</h3></td>
+                    <td><input type="date" name="endDate" id="endDate" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Organizing Body</h3></td>
+                    <td><input type="text" name="organizingBody" id="organizingBody" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Venue</h3></td>
+                    <td><input type="text" name="venue" id="venue" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter City</h3></td>
+                    <td><input type="text" name="city" id="city" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter State</h3></td>
+                    <td><input type="text" name="state" id="state" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Country</h3></td>
+                    <td><input type="text" name="country" id="country" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Event Sponcoring Agency</h3></td>
+                    <td><input type="text" name="sponcoringAgency" id="sponcoringAgency" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter File(Google Drive Link)</h3></td>
+                    <td><input type="text" name="file" id="file" required></td>
+                </tr>
+                <br> 
+            </table>
+            <input type="submit" name="button" value="Add Event" class="btn btn-success">
+        </form>
+    </body>
+</html>

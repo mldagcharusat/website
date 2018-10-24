@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <link href='//fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <title>Add Student</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="addNewStudent.jsp" method="post">
+            <h1 style="font-family: 'Montserrat';text-align: center;">&#8203;Add New Student</h1>
+            <table style="font-family: 'Lora';" class="table table-striped">
+                <tr>
+                    <td><h3>Enter Name of the Student</h3></td>
+                    <td><input type="text" name="name" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Research Topic</h3></td>
+                    <td><input type="text" name="topic" id="topic" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Email Id</h3></td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Enter Qualification</h3></td>
+                    <td><input type="radio" name="qualification" value="B.Tech" checked>B.Tech
+                    <input type="radio" name="qualification" value="M.Tech">M.Tech
+                    <input type="radio" name="qualification" value="PHD">PHD</td>
+                </tr>
+                 <tr>
+                    <td><h3>Link Of Google Scholar Profile</h3></td>
+                    <td><input type="text" name="scholar" id="scholar" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Choose Image</h3></td>
+                    <td><input type="file" name="image" id="image" required></td>
+                </tr>
+                <br> 
+            </table>
+            <input type="submit" name="button" value="Add Student" class="btn btn-success">
+        </form>
+    </body>
+</html>
